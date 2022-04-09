@@ -1,0 +1,3 @@
+#EXTM3U
+#EXT-X-STREAM-INF:BANDWIDTH=150000,RESOLUTION=416x234,CODECS="avc1.42e00a,mp4a.40.2"
+https://video.detik.com/transtv/smil:transtv.smil/chunklist_w1240948553_b344100_sleng.m3u8
