@@ -1,0 +1,57 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+body:before, body:after {
+  content: "";
+  position: fixed;
+  z-index: 5;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+body:before {
+  top: 0;
+  background: linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0) 100%);
+}
+body:after {
+  bottom: 0;
+  background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0) 100%);
+}
+body.up-has-content:before {
+  opacity: 1;
+}
+body.down-has-content:after {
+  opacity: 1;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+}
+
+.box {
+  flex: 1;
+  text-align: center;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.arrow {
+  position: relative;
+}
+.arrow span {
+  position: absolute;
+}
+.arrow img {
+  margin-bottom: 50px;
+}
+
+.up {
+  color: #35ff99;
+}
